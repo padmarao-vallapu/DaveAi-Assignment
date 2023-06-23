@@ -11,6 +11,7 @@ let errorMessageEl = document.getElementById("err-msg");
 let listEl = document.getElementById("persons-list");
 let addBtnEl = document.getElementById("Add-Button");
 let searchBtnEl = document.getElementById("search-btn");
+let clearBtnEl = document.getElementById("Clear-btn");
 
 function getPersonDetailsFromLocalStorage() {
     let stringifiedPersonDetails = localStorage.getItem("personsData");
@@ -251,6 +252,11 @@ searchBtnEl.onclick = function() {
     console.log(filteredPersons);
 }
 
+clearBtnEl.onclick = function() {
+    listEl.innerHTML = ""
+    localStorage.clear();
+
+}
 
 // Clear the form fields
 addBtnEl.onclick = function() {
