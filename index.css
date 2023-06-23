@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.container {
+    max-width: 75vw;
+    margin: 0 auto;
+    background-color: #f9fbfe;
+    padding: 20px;
+}
+
+#search-input {
+    border-radius: 4px;
+    border-color: #e5eaf4;
+    margin-left: 80px;
+    width: 250px;
+    height: 38px;
+}
+
+.search {
+    background-color: #00306e;
+    color: #ffffff;
+    margin-bottom: 16px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    height: 40px;
+}
+
+@media(max-width:576px) {
+    #search-input {
+        width: 200px;
+        margin-left: 10px;
+        height: 35px;
+        margin-bottom: 5px;
+    }
+
+    .container {
+        max-width: 95vw;
+    }
+}
+
+.form {
+    background-image: linear-gradient(to left, #7b8794, #cbd2d9);
+    padding: 16px;
+    border-radius: 8px;
+    border-color: #e5eaf4;
+}
+
+.label {
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    width: 100%;
+    border: solid;
+    background-color: white;
+}
+
+.select {
+    padding: 5px;
+    margin-left: 80px;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.section2 {
+    background-image: linear-gradient(to right, #e5eaf4, #ff9f00);
+    border-radius: 8px;
+    border-color: #e5eaf4;
+}
+
+h1 {
+    color: #1e293b;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 20;
+    font-weight: bold;
+}
+
+h2 {
+    text-align: center;
+    color: #183b56;
+}
+
+.input {
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 8px;
+    width: 100%;
+
+}
+
+.add-btn {
+    background-color: #00306e;
+    color: #ffffff;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    height: 40px;
+    margin-left: 10px;
+}
+
+.cardsContainer {
+    background-color: #ff9f00;
+    background-image: linear-gradient(to right, #e5eaf4, #ff9f00);
+}
+
+.person-card {
+    margin: 10px;
+    padding: 8px;
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e5eaf4;
+    border-radius: 16px;
+    width: 300px;
+}
+
+.details {
+    color: #121212;
+    margin: 2px;
+    font-size: 15px;
+}
+
+.delete-icon-container {
+    text-align: right;
+    width: 18%;
+}
+
+.error-message {
+    color: red;
+    margin-top: 5px;
+}
