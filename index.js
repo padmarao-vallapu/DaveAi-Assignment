@@ -28,7 +28,7 @@ let persons = getPersonDetailsFromLocalStorage();
 let filteredPersons = [];
 filteredPersons.sort();
 console.log(persons);
-//localStorage.clear();
+
 
 
 // Validate form values
@@ -145,10 +145,6 @@ function addPerson() {
 
 }
 
-// Perform validation for each field and display error message if necessary
-
-// Add person to the list if all fields are valid
-/* All fields are valid */
 
 // Add the person to the persons list section
 let personsList = document.getElementById("persons-list");
@@ -229,19 +225,6 @@ for (let eachPerson of persons) {
     createPersonCard(eachPerson);
 }
 
-// Implementing Pagination
-function showPersons(page) {
-    const startIndex = (page - 1) * itemsPerPage;
-    const endIndex = startIndex + itemsPerPage;
-    const personsToDisplay = filteredPersons.length > 0 ? filteredPersons : persons;
-
-    const personsList = document.getElementById('personsList');
-    personsList.innerHTML = ''; // Clear the list
-
-    for (let i = startIndex; i < endIndex && i < personsToDisplay.length; i++) {
-        const person = personsToDisplay[i];
-    }
-}
 
 searchBtnEl.onclick = function() {
     listEl.innerHTML = ""
